@@ -20,3 +20,21 @@ h2 { margin-top:2.1em; letter-spacing:-.01em; }
 .updated { color:var(--muted); font-size:15px; }
 footer { margin-top:72px; color:var(--muted); font-size:14px; }
 li { margin:.35em 0; }
+/* scenario-20261123: App Store CTA, scenario steps, demo video */
+.cta-row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:22px 0 8px; }
+.cta { display:inline-block; padding:13px 24px; border-radius:14px; background:#B8760F; color:#fff; font-weight:700; }
+.cta:hover { background:#9c640c; text-decoration:none; }
+.cta-note { color:var(--muted); font-size:15px; }
+.steps { list-style:none; padding:0; margin:24px 0; display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.steps li { margin:0; }
+.steps figure, .demo { margin:0; }
+.steps img { display:block; width:100%; height:auto; border-radius:18px; box-shadow:0 6px 22px rgba(0,0,0,.14); }
+.steps figcaption { margin-top:12px; font-size:16px; line-height:1.5; }
+.demo { margin:28px auto; max-width:340px; text-align:center; }
+.demo video { display:block; width:100%; aspect-ratio:9/16; border-radius:22px; background:#FDF8F0; box-shadow:0 6px 22px rgba(0,0,0,.14); }
+.demo figcaption { margin-top:10px; color:var(--muted); font-size:14px; }
+.lang-block { margin-top:72px; padding-top:8px; border-top:1px solid var(--panel); }
+@media (max-width:640px) {
+  .steps { grid-template-columns:1fr; max-width:360px; margin-left:auto; margin-right:auto; }
+  .cta { width:100%; text-align:center; }
+}
